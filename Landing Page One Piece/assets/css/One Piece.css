@@ -27,8 +27,7 @@
 
 .main-content {
     max-width: 120rem; /*largura maxima*/
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
 
 .close-menu { /* o cheked nao aparece na pagina*/
@@ -144,12 +143,13 @@ h4 {
 .intro-text, .intro-img {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .intro-img  img {
     max-width: 100%;
     min-height: auto;
+    margin-top: 80px;
 }
 
 
@@ -197,6 +197,12 @@ h4 {
 
 .fundo-zoro {
     background-image: url('../img/zoro/fundo-zoro.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.fundo-nami{
+    background-image: url('../img/Nami/desktop-wallpaper-one-piece-nami-and-backgrounds-nami-one-piece.jpg'); /* img de fundo da svg background*/
     background-size: cover;
     background-position: center center;
 }
