@@ -206,3 +206,9 @@ h4 {
     background-size: cover;
     background-position: center center;
 }
+
+.fundo-usopp{
+    background-image: url('../img/usopp/usopp-fundo.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
