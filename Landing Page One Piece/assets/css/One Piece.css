@@ -212,3 +212,21 @@ h4 {
     background-size: cover;
     background-position: center center;
 }
+
+.fundo-chopper{
+    background-image: url('../img/chopper/fundo-chopper.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.fundo-sanji{
+    background-image: url('../img/sanji/fundo-sanji.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.fundo-robin{
+    background-image: url('../img/robin/fundo-robin.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
