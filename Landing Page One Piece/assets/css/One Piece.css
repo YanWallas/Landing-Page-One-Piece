@@ -194,3 +194,9 @@ h4 {
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.fundo-zoro {
+    background-image: url('../img/zoro/fundo-zoro.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
