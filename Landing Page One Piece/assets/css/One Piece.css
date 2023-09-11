@@ -248,3 +248,9 @@ h4 {
     background-size: cover;
     background-position: center center;
 }
+
+.fundo-franky{
+    background-image: url('../img/franky/fundo-franky.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
