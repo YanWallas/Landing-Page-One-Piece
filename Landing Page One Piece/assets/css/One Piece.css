@@ -257,3 +257,21 @@ h4 {
     background-size: cover;
     background-position: center center;
 }
+
+.fundo-brook {
+    background-image: url('../img/brook/fundo-brook.jpeg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.fundo-acer{
+    background-image: url('../img/ace/fundo-ace.jpg'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.fundo-shanks{
+    background-image: url('../img/shanks/fundo-shanks.png'); /* img de fundo da svg background*/
+    background-size: cover;
+    background-position: center center;
+}
