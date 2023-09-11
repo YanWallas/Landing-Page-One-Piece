@@ -174,11 +174,14 @@ h4 {
     text-transform: uppercase;
     line-height: 1.2;
     color: black;
+    text-shadow: 0.1em 0.1em 0.2em white;
+
 }
 
 .intro-text p {
     margin-bottom: 3rem;
     color: black;
+    text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .grid {
