@@ -14,7 +14,6 @@ html {
     top: 0; /* colado em cima*/
     left: 0; /*colado na esquerda*/
     right: 0; /*colado na direita*/
-    bottom: 0;/*colando em baixo*/
     width: 100%; /* 100% de largura da pagina*/
     z-index: 1; /*barra de menu em cima da pagina*/
     border-bottom: 0.1rem solid ; /* borda de baixo*/
@@ -92,7 +91,7 @@ html {
 }
 
 .intro-top { 
-    max-width: 70rem;
+    max-width: 100%;
     display: flex;
     /*flex-flow: column wrap;*/
     flex-direction:column;
@@ -112,7 +111,9 @@ h2 {
 }
 
 p {
+    max-width: 95%;
     margin-bottom: 3rem;
+    margin-left: 1rem;
     font-size: 3rem;
     width: 100%;
     color: rgb(60, 110, 247);
@@ -205,11 +206,12 @@ h4 {
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;;
-
 }
 
 .gallery-img img {
     transition: all 300ms ease-in-out;
+    width: 600px;
+    height: 600px;
 }
 
 .gallery-img img:hover {
@@ -274,4 +276,160 @@ h4 {
     background-image: url('../img/shanks/fundo-shanks.png'); /* img de fundo da svg background*/
     background-size: cover;
     background-position: center center;
+}
+
+@media (max-width: 1750px) {
+    .gallery-img img {
+        transition: all 300ms ease-in-out;
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .gallery-img img {
+        transition: all 300ms ease-in-out;
+        width: 500px;
+        height: 500px;
+    }
+
+    .grid {
+        margin-left: 0.5rem;
+    
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .menu ul li a {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .logo {/*imagem logo*/
+        width:120px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .gallery-img img {
+        transition: all 300ms ease-in-out;
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 1200px) { 
+    .intro-content, .grid { 
+        grid-template-columns: 1fr;
+        
+    }
+
+    .intro-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 0.5rem;
+    }
+    
+    .intro-img  img {
+        max-width: 100%;
+        min-height: auto;
+        margin-bottom: 1rem;
+        margin-top: 0px;
+        }
+
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+        width: 750px;
+        height: 800px;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .menu {
+        bottom: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+        background-color: white;
+    }
+
+    .menu-spacing { /* tira o espaço em branco do menu de cima quando a tela esta em mobile*/
+        display: none;
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: rgb(14, 66, 211);
+    }
+    
+    p {
+        margin-bottom: 1.5rem;
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        width: 100%;
+        color: rgb(60, 110, 247);
+    }
+    
+    h3 {
+        font-size: 2rem;
+        margin: 0.5px;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: darkviolet
+    }
+
+
 }
