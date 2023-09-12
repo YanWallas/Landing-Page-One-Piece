@@ -279,23 +279,32 @@ h4 {
 }
 
 @media (max-width: 1750px) {
+    .gallery-img {
+        max-width: 100%;
+    }
+    
     .gallery-img img {
         transition: all 300ms ease-in-out;
-        width: 550px;
-        height: 550px;
+        width: 100%
+    }
+    
+    .gallery-img img:hover {
+        transform: translate(-1%, 1%) scale(1.2) rotate(3deg);
     }
 }
 
 @media (max-width: 1650px) {
+    .gallery-img {
+        max-width: 100%;
+    }
+    
     .gallery-img img {
         transition: all 300ms ease-in-out;
-        width: 500px;
-        height: 500px;
+        width: 100%
     }
-
-    .grid {
-        margin-left: 0.5rem;
     
+    .gallery-img img:hover {
+        transform: translate(-1%, 1%) scale(1.2) rotate(3deg);
     }
 }
 
@@ -314,11 +323,8 @@ h4 {
     }
     
     .gallery-img img {
-        transition: all 300ms ease-in-out;
-        width: 400px;
-        height: 400px;
+        width: 100%;  
     }
-
 }
 
 @media (max-width: 1200px) { 
@@ -335,9 +341,12 @@ h4 {
     
     .intro-img  img {
         max-width: 100%;
+        width: 750px;
+        height: 800px;
         min-height: auto;
         margin-bottom: 1rem;
         margin-top: 0px;
+        margin-left: 1.5rem;
         }
 
     .gallery-img {
@@ -345,12 +354,18 @@ h4 {
         height: 100%;
         max-width: 100%;
         max-height: 100%;
+        
     }
 
     .gallery-img img {
         width: 100%;
         width: 750px;
         height: 800px;
+        
+    }
+
+    .gallery-img img:hover {
+        transform: none;
     }
 
     .grid-one-content {
@@ -378,8 +393,8 @@ h4 {
         z-index: 2;
         top: 2rem;
         right: 2rem;
-        background: var(--primary-color);
-        color: var(--white-color);
+        background: white;
+        color: black;
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
