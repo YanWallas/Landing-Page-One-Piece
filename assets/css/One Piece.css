@@ -190,7 +190,6 @@ h4 {
     counter-reset: grid-counter; /*iniciando e criando a contagem */
     max-width: 100%;
     margin-left: 2rem;
-
 }
 
 .grid-one-content {
@@ -444,6 +443,144 @@ h4 {
         margin-top: 10px;
         color: darkviolet
     }
+}
 
+@media (max-width: 800px) { 
+    .section {
+        min-height: 100vh; /*Altura Minima*/
+        max-width: 100%;
+    }
+
+    .intro-content, .grid { 
+        grid-template-columns: 1fr;
+        
+    }
+
+    .intro-text {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin-left: 0.5rem;
+    }
+
+    .intro-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        margin-left: 0.6rem;
+    
+    }
+    
+    .intro-img  img {
+        max-width: 95%;
+        width: 750px;
+        height: 800px;
+        min-height: auto;
+        margin-bottom: 1rem;
+        margin-top: 0px;
+        margin-left: 1.5rem;
+        }
+
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+
+    .gallery-img img {
+        max-width: 95%;
+        width: 750px;
+        height: 800px;
+        min-height: auto;
+        margin-bottom: 2rem;
+        margin-top: 0px;
+        margin-left: 0.1rem;
+        }
+
+    .gallery-img img:hover {
+        transform: none;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .menu {
+        bottom: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: white;
+        color: black;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+        background-color: white;
+    }
+
+    .menu-spacing { /* tira o espaço em branco do menu de cima quando a tela esta em mobile*/
+        display: none;
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 0,3rem;
+        margin-right: 0,3rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: rgb(14, 66, 211);
+    }
+    
+    p {
+        margin-bottom: 1.5rem;
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        width: 100%;
+        color: rgb(60, 110, 247);
+    }
+    
+    h3 {
+        font-size: 2rem;
+        margin: 0.5px;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: darkviolet
+    }
 
 }
