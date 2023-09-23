@@ -445,7 +445,7 @@ h4 {
     }
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 800px) {  /*--> AQUI <--*/
     .section {
         min-height: 100vh; /*Altura Minima*/
         max-width: 100%;
